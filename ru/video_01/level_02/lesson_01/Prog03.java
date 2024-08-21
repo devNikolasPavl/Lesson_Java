@@ -1,4 +1,4 @@
-package ru.video_01.level_01.lesson_03;
+package ru.video_01.level_02.lesson_01;
 
 import javax.swing.*;
 
