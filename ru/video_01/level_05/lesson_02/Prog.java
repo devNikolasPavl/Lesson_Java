@@ -32,18 +32,34 @@ class myFrame extends JFrame {
 class myPanel extends JPanel {
 
     private Image img;
+    private int x = 0, y = 0;
+    private int napr = 2;
 
     public myPanel()
     {
         try
         {
-            img = ImageIO.read(new File("img/ff.gif"));
+            img = ImageIO.read(new File("/Users/nikolaypavlov/GIT/Lesson_Java/ru/video_01/level_05/lesson_02/img/ff.gif"));
         }
         catch (IOException ex) {}
+        Timer tm = new Timer(10, new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                if (napr==0) x--;
+                else if (napr==1) y--;
+                else if (napr==2) x++;
+                else if (napr==3) y++;
+                repaint();
+            }
+        });
+
+        tm.start();
     }
 
     public void paintComponent(Graphics gr)
     {
-        gr.drawImage(img, 0, 0, null);
+        gr.clearRect(x-1, y-1, img.getWidth(null)+1, img.getHeight(null)+1);
+        gr.drawImage(img,x,y, null);
     }
 }
