@@ -39,7 +39,7 @@ class myPanel extends JPanel {
     {
         try
         {
-            img = ImageIO.read(new File("/Users/nikolaypavlov/GIT/Lesson_Java/ru/video_01/level_05/lesson_02/img/ff.gif"));
+            img = ImageIO.read(new File("C://ff.gif"));
         }
         catch (IOException ex) {}
         Timer tm = new Timer(10, new ActionListener()
