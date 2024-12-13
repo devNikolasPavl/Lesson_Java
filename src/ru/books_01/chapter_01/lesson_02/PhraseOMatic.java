@@ -1,4 +1,4 @@
-package ru.books_01.chapter_02;
+package ru.books_01.chapter_01.lesson_02;
 
 public class PhraseOMatic {
     public static void main(String[] args) {

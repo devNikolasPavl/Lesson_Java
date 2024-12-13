@@ -1,4 +1,4 @@
-package ru.books_01.chapter_01;
+package ru.books_01.chapter_01.lesson_01;
 
 public class MyFirstApp {
     public static void main(String[] args) {
